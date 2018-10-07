@@ -7,6 +7,7 @@
   <title>GISPro2018</title>
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!--Add support for earlier versions of Internet Explorer -->
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
@@ -25,60 +26,195 @@
 				<h2>Mapping Pedestrian Infrastructure<br>Using Open Tools</h2>
 				<img class="plain" src="/images/gispro.jpg"  height="25%" width="25%" style="float:right;">
 				<div class="footer">
-				  <p style="text-align: center; font-size:30px;vertical-align: middle;">#GISPro2018</p>
+				  <p style="text-align: center; font-size:30px;vertical-align: middle;"><i class="fa fa-twitter"></i> #GISPro2018</p>
 				</div>
 			</section>
 
 			<section>
-				<h1>Why?</h1>
-				<p>10 minute City</p>
+				<h2>Follow Along</h2>
+				<p><i class="fa fa-github"></i> <a href="https://bondah.github.io/gispro2018">https://bondah.github.io/gispro2018</a></p>
 			</section>
 
 			<section>
-				<h1>Why?</h1>
-				<p>Show greatest benefit in connectivity from:</p>
+				<h2>Why?</h2>
+				<p>20 minute Neighborhood</p>
+				<img src="/images/20minute.jpeg"></img>
+				<p class="caption">Melbourne Department of Transport, Planning and Local Infrastructure, 2014</p>
+			</section>
+
+			<section>
+				<h2>Why?</h2>
+				<p>10 minute City</p>
+				<img src="/images/10minute.png"></img>
+				<p class="caption">https://www.10minutewalk.org</p>
+			</section>
+
+			<section>
+				<h2>Why?</h2>
+				<p>Show greatest benefit in connectivity from:
 				<ul><li>new crosswalk</li>
 					<li>new sidewalk</li>
-				</ul>
+				</ul></p>
+			</section>
+
+			<section>
+				<p>Not a work project; I'm just interested in walkability!</p>
+				<img src="/images/arturo-castaneyra-396454-unsplash.jpg">
+				<p class="caption">Photo by Arturo Castaneyra on Unsplash</p>
 			</section>
 
 			<section data-background-color="#1a4a5d">
-				<h1>Data Sources</h1>
+				<h2>We'll cover:</h2>
+				<ol>
+					<li>Data Storage</li>
+					<li>Data Collection</li>
+					<li>Analysis</li>
+				</ol>
+			</section>
+
+			<section data-background-color="#1a4a5d">
+				<h1>Data Storage</h1>
 			</section>
 
 			<section>
-				<h1>OpenStreetMap</h1>
-				<p><a href="https://www.openstreetmap.org">OpenStreetMap</a> is free data. Someone else has done all the hard work of figuring out tags.<p>
+				<h2>Most of GIS is data management</h2>
+				<p>Creation & analysis are secondary.</p>
 			</section>
 
 			<section>
-				<h1>OpenStreetMap</h1>
+				<h2>OpenStreetMap</h2>
+				<p><a href="https://www.openstreetmap.org">OpenStreetMap</a> is free data. Someone else has done all the hard work of figuring out a structure.</p>
+				<img src="/images/osm.png" height="25%" width="25%">
+			</section>
+
+			<section>
+				<h2>OpenStreetMap</h2>
 				<p>They also store the data and make it accessible from anywhere/anytime.</p>
+				<img src="/images/openstreetmap.png">
 			</section>
 
 			<section>
-				<h1>OpenStreetMap</h1>
-				<p>Neighbors, co-workers, & kids can all help you edit.</p>
+				<h2>OpenStreetMap</h2>
+				<p>Neighbors, co-workers, & kids can all help you edit w/ minimal training.</p>
 			</section>
 
 			<section>
-				<h1>OpenStreetMap</h1>
-				<p>Risks? Sure there is vandalism, but just keep a dated local copy for your study area.</p>
+				<h2>OpenStreetMap</h2>
+				<p>Review & decide on what tags to use (aka attributes) <a href="https://wiki.openstreetmap.org/wiki/Key:footway">https://wiki.openstreetmap.org/wiki/Key:footway</a></p>
 			</section>
 
 			<section>
-				<h1>Intersections</h1>
+				<h2>OpenStreetMap</h2>
+				<p>Risks? Sure there is vandalism, but just keep a dated, local copy for your study area.</p>
+			</section>
+
+			<section>
+				<h2>Local Downloads</h2>
+				<p>Very rare to see an actual pedestrian network. You might find planimetrics.</p>
+			</section>
+
+			<section>
+				<h2>On your own</h2>
+				<p>Pick a schema & stick with it!</p>
+			</section>
+
+			<section>
+				<p>Schema is just a fancy word for how your database is set up (table names, field names, unique keys, domains).</p>
+			</section>
+
+			<section>
+				<p>Don't start anything until you've picked your schema and level of detail.</p>
+			</section>
+
+			<section>
+				<p>But be willing to adjust your schema over time (changing needs, lessons learned).</p>
+			</section>
+
+			<section data-background-color="#1a4a5d">
+				<h1>Data Collection</h1>
+			</section>
+
+			<section>
+				<h2>3 Methods:</h2>
+				<p><ul><li>digitizing</li>
+					<li>edit existing data</li>
+					<li>field survey</li>
+				</ul></p>
+			</section>
+
+			<section>
+				<p>For any method, you'll need to know what things look like.</p>
+			</section>
+
+			<section>
+				<p>For location aerial imagery works great!</p>
+			</section>
+
+			<section>
+				<p>For obstructions and crosswalk accessibility, you'll need a street level view.</p>
+			</section>
+
+			<section>
+				<h2>Mapillary</h2>
+				<p>Collect & upload street level imagery (or even sidewalk imagery!).</p>
+				<img src="/images/mapillary.png"></p>
+			</section>
+
+			<section>
+				<h2>Mapillary</h2>
+				<p>View it in OpenStreetMap and link from QGIS (go2mapillary plugin).</p>
+			</section>
+
+			<section>
+				<h2>OpenStreetCam</h2>
+				<p>Probably best off using Mapillary, but this is another option viewable in OpenStreetMap.</p>
+				<img src="/images/openstreetcam.png"></p>
+			</section>
+
+			<section>
+				<section>
+					<p>Or take your own geotagged photos and import into QGIS.</p>
+				</section>
+
+				<section>
+					<p>Search for Import Geotagged Pictures and point it to the images folder. You will save the result to your geopackage as a Photos layer.</p>
+					<img src="/images/geotag.png"></p>
+				</section>
+
+				<section>
+					<p>To quickly view the images and highlight the associated point, go to Database, eVis, eVis Event Browser.</p>
+					<img src="/images/photo.png">
+				</section>
+			</section>
+
+			<section>
+				<p>Tag: sidewalk (along the street) vs. footway (not parallel to a road)</p>
+				<img src="/images/sidewalk.png">
+			</section>
+
+			<section>
+				<p>Tag: footway (not parallel to a road)</p>
+				<img src="/images/footpath.png">
+			</section>
+
+			<section data-background-color="#1a4a5d">
+				<h1>Analysis</h1>
+			</section>
+
+			<section>
+				<h2>Intersections</h2>
 				<p>Modeling an intersection</p>
 				<img src="/images/test.jpg"  height="50%" width="50%">
 			</section>
 
-			<section data-background-color="#1a4a5d">
-				<h2>Questions?</h2>
-				<br><br><br>
-				<img class="plain" src="/images/conf.jpg"  height="25%" width="25%" style="float:left;">
-				<img class="plain" src="/images/urisa.png"  height="25%" width="25%" style="float:right;">
+			<section data-background-color="#1a4a5d" id="end">
+				<h2>Get in Touch</h2>
+				<p><i class="fa fa-twitter"></i> <a href="https://twitter.com/bondaharper" style="color:#fff;">@bondaharper</a><br>
+					<i class="fa fa-github"></i> <a href="https://github.com/bondah" style="color:#fff;">bondah</a><br>
+					<i class="fa fa-envelope"></i> <a href="mailto:bharper@beverlyhills.org" style="color:#fff;">bharper at beverlyhills.org</a><br>
+				</p>
 				<div class="footer">
-				  <p style="text-align: center; font-size:30px;vertical-align: middle;">#GISPro2018</p>
+				  <p style="text-align: center; font-size:30px;vertical-align: middle;"><i class="fa fa-twitter"></i> #GISPro2018</p>
 				</div>
 			</section>
 
@@ -92,6 +228,7 @@
 		Reveal.initialize({
       // Transition style
 	     transition: 'none', // none/fade/slide/convex/concave/zoom
+			 history: 'true',
 		});
 	</script>
 </body>
