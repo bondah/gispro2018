@@ -130,6 +130,23 @@
 				<p>But be willing to adjust your schema over time (changing needs, lessons learned).</p>
 			</section>
 
+			<section>
+				<p>Decision: Sidewalk as street tag vs. separate way?</p>
+			</section>
+
+			<section>
+				<p>Separate way benefits:
+					<ul>
+						<li>Map breaks w/o splitting street</li>
+						<li>Indicate segment issues</li>
+    				<li>Crossings clear</li></ul></p>
+			</section>
+
+			<section>
+				<p>Separate way detriments:
+				<ul><li>Need to add street name for directions (managing street name in 2 places)</li></ul></p>
+			</section>
+
 			<section data-background-color="#1a4a5d">
 				<h1>Data Collection</h1>
 			</section>
@@ -197,14 +214,138 @@
 				<img src="/images/footpath.png">
 			</section>
 
+			<section>
+				<h2>Obstructions</h2>
+				<p>Tag: Indicate obstructions w/ wheelchair=no</p>
+			</section>
+
+			<section>
+				<h2>Crosswalks</h2>
+				<p>The Zoo: Zebra, Pelica, Toucan, Tiger, Pegasus</p>
+					<img src="/images/menagerie-cartoon.gif">
+					<p class="caption">Cambridge Cycling Campaign</p>
+			</section>
+
+			<section>
+				<h2>Crosswalks</h2>
+				<p>Tag: In US, use Zebra, marked, & unmarked.</p>
+			</section>
+
+			<section>
+				<h2>Crosswalks</h2>
+				<p>Tag: kerb (super important for mobility aids (strollers/wheelchairs/walkers)</p>
+			</section>
+
+			<section>
+				<h2>Crosswalks</h2>
+				<p>Use kerb = lowered & tactile_paving = yes if they apply</p>
+			</section>
+
+			<section>
+				<h2>Crosswalks</h2>
+				<p>Add crosswalk node to street (for driving navigation, doesn’t matter for our pedestrian modeling)</p>
+				<img src="/images/crosswalknode.png">
+			</section>
+
+			<section>
+				<h2>Stairs</h2>
+				<p>Tag as Steps</p>
+				<img src="/images/neko-tai-442382-unsplash.jpg">
+				<p class="caption">Photo by Neko Tai on Unsplash</p>
+			</section>
+
+			<section>
+				<h2>Pedestrian plazas</h2>
+				<p>Tricky! Lines make for easy network analysis, polygon more appropriate.</p>
+				<img src="/images/pedplaza.png">
+			</section>
+
 			<section data-background-color="#1a4a5d">
 				<h1>Analysis</h1>
 			</section>
 
 			<section>
-				<h2>Intersections</h2>
-				<p>Modeling an intersection</p>
-				<img src="/images/test.jpg"  height="50%" width="50%">
+				<h2>Download</h2>
+				<p>If your data is in OpenStreetMap, you'll need a local copy for analysis.</p>
+			</section>
+
+			<section>
+				<h2>QGIS</h2>
+				<p>You could use many programs, but <a href="https://www.qgis.org/en/site/">QGIS</a> has all the tools you need in an easy graphic interface.</p>
+				<img src="/images/qgis.png" height="35%" width="35%">
+			</section>
+
+			<section>
+				<h2>QuickOSM</h2>
+				<p>The QuickOSM plugin is an easy way to extract data based on a query.</p>
+				<img class="stretch" src="/images/quickosm.png">
+			</section>
+
+			<section>
+				<p>Once the data is in QGIS, you can filter based on attributes such as "crossing" = 'unmarked'</p>
+				<img class="stretch" src="/images/query.png">
+			</section>
+
+			<section>
+				<p>Or symbolize to highlight areas of interest (like unmarked crossings)</p>
+				<img class="stretch" src="/images/symbolize.png">
+			</section>
+
+			<section>
+				<h2>QNEAT3</h2>
+				<p><a href="https://root676.github.io">QNEAT3</a> is a plugin with most of the tools you'll need.</p>
+				<img src="/images/qneat3.png">
+			</section>
+
+			<section>
+				<h2>Shortest Path</h2>
+				<p>Go to QNEAT3, Routing, Shortest Path. Select your from and to points.</p>
+				<img src="/images/shortpath.png">
+			</section>
+
+			<section>
+				<h2>Shortest Path</h2>
+				<p>Make a copy of your data & play around w/ adding crosswalks to see how this affects your shortest path.</p>
+			</section>
+
+			<section data-background-color="#1a4a5d">
+				<h1>Takeaways</h1>
+			</section>
+
+			<section>
+				<p>The act of mapping alone will highlight issues</p>
+			</section>
+
+			<section>
+				<p>Issues:<ul>
+				<li>Abrupt sidewalk ends</li>
+    		<li>Lack of crosswalks</li>
+    		<li>No lowered kerb</li>
+    		<li>Obstructions</li></ul></p>
+			</section>
+
+			<section>
+				<p>Visualize yourself in a wheelchair or pushing a stroller</p>
+				<img src="/images/adorable-asphalt-baby-365813.jpg">
+				<p class="caption">Photo by Dom J from Pexels</p>
+			</section>
+
+			<section>
+				<p>The least able must often travel the farthest</p>
+				<img src="/images/wooozxh-296121-unsplash.jpg">
+				<p class="caption">Photo by 张 学欢 on Unsplash</p>
+			</section>
+
+			<section>
+				<p>Mapping is a powerful tool to spotlight mobility issues in our communities.</p>
+			</section>
+
+			<section>
+				<p>Best of all, you can do it all w/ free tools!</p>
+			</section>
+
+			<section>
+				<p>I hope you find a way to use open source mapping tools for a topic you care about.</p>
 			</section>
 
 			<section data-background-color="#1a4a5d" id="end">
