@@ -12,6 +12,15 @@
 	<!--[if lt IE 9]>
 	<script src="lib/js/html5shiv.js"></script>
 	<![endif]-->
+
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
 </head>
 
 <body>
@@ -201,11 +210,13 @@
 			</section>
 
 			<section>
-				<p>Tag: sidewalk (along the street) vs. footway (not parallel to a road)</p>
+				<h2>Lines</h2>
+				<p>Tag: sidewalk (along the street)</p>
 				<img src="images/sidewalk.png">
 			</section>
 
 			<section>
+				<h2>Lines</h2>
 				<p>Tag: footway (not parallel to a road)</p>
 				<img src="images/footpath.png">
 			</section>
@@ -214,6 +225,12 @@
 				<h2>Obstructions</h2>
 				<p>Tag: Indicate obstructions w/ wheelchair=no</p>
 				<img src="images/obstruct.png">
+			</section>
+
+			<section>
+				<h2>Crosswalks</h2>
+				<p>Simple or complex.</p>
+				<img src="images/learn.png">
 			</section>
 
 			<section>
@@ -231,7 +248,7 @@
 
 			<section>
 				<h2>Crosswalks</h2>
-				<p>Tag: vertex as kerb (super important for mobility aids (strollers/wheelchairs/walkers)</p>
+				<p>Tag: vertex as kerb. Super important for mobility aids like strollers/wheelchairs/walkers.</p>
 				<img class="stretch" src="images/kerb.jpg">
 			</section>
 
@@ -344,7 +361,7 @@
 			</section>
 
 			<section>
-				<p>Use your results to inform discussions about zoning, bus routes, e-scooters, public amenities & services.</p>
+				<p>Use your results to inform discussions about zoning, bus routes, public amenities & services.</p>
 			</section>
 
 			<section>
@@ -363,8 +380,9 @@
 
 			<section>
 				<p>Issues:<ul>
-				<li>Abrupt sidewalk ends</li>
+				<li>Abrupt sidewalk end</li>
     		<li>Lack of crosswalks</li>
+    		<li>Lack of sidewalks</li>				
     		<li>No lowered kerb</li>
     		<li>Obstructions</li></ul></p>
 			</section>
@@ -382,7 +400,7 @@
 			</section>
 
 			<section>
-				<p>Mapping is a powerful tool to spotlight mobility issues in our communities.</p>
+				<p>Mapping is a powerful tool to spotlight pedestrian issues in our communities.</p>
 			</section>
 
 			<section>
